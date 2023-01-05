@@ -5,7 +5,8 @@ using TMPro;
 
 public class UI : MonoBehaviour
 {
-    public TMP_Text puntuacion;   
+    public TMP_Text puntuacion;
+    public TMP_Text vida;
 
 
 
@@ -14,5 +15,6 @@ public class UI : MonoBehaviour
     void Update()
     {
         puntuacion.text = GameManager.instance.punt.ToString();
+        
     }
 }

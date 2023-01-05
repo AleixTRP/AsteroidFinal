@@ -59,7 +59,12 @@ public class AsteroidControler : MonoBehaviour
             collision.gameObject.GetComponent<Player>().Muerte();
             Destroy(gameObject);
             manager.asteroid_actuales--;
+
+
+          
+            
         }
+
     }
 
 

@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
 
+
     private TrailRenderer tr;
 
     Animator anim;
@@ -73,12 +74,14 @@ public class Player : MonoBehaviour
         Destroy(temp, 3);
 
         StartCoroutine(Respawn_Corutine());
+
+       
     }
 
     IEnumerator Respawn_Corutine()
     {
        
-         GameManager.instance.life--;
+        GameManager.instance.life--;
         transform.position = Vector3.zero;
         rb.velocity = Vector3.zero;
         coll.enabled = false;   
